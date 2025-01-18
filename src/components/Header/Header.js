@@ -1,12 +1,16 @@
 import "./header.css";
+import NetflixLogo from "../../Assets/images/netflix-logo.png"
+import SearchIcon from '@mui/icons-material/Search';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 function Header() {
   return (
       <div className="header_outer_container">
         <div className="header_container">
             <div className='header_left'>
                 <ul>
-                    <li><img src="{NetflixLogo}" alt="Netflix Logo"/></li>
-                    <li>Netflix</li>
+                    <li><img src={NetflixLogo} alt="Netflix Logo"/></li>
                     <li>Home</li>
                     <li>TVShows</li>
                     <li>Movies</li>
@@ -15,10 +19,10 @@ function Header() {
                     <li>Browse by Languages</li>
                 </ul>
             </div>
-            <div className='header_left'>
+            <div className='header_right'>
                 <ul>
                     <li>
-                        <SerchIcon />
+                        <SearchIcon />
                     </li>
                     <li>
                         <NotificationsNoneIcon />

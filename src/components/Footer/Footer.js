@@ -1,3 +1,7 @@
+
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import "./footer.css";
 function Footer() {
   return (
@@ -37,11 +41,13 @@ function Footer() {
               <li>Contact Us</li>
             </ul>
           </div>
-          <div className="service_code">
+        </div>
+        <div className="service_code">
             <p>Service Code</p>
           </div>
-          <div className="copy-write">&copy; 1997-2024 Netflix, Inc.</div>
-        </div>
+          <div className="copy-write">
+            &copy; 1997-2024 Netflix, Inc.
+          </div>
       </div>
     </div>
   );
