@@ -9,12 +9,14 @@ const Banner = () => {
     (async () => {
       try {
         const request = await axios.get(requests.fetchNetflixOriginals);
-        console.log(request)
+        // console.log(request)
+
         setMovie(
           request.data.results[
             Math.floor(Math.random() * request.data.results.length)
           ]
         );
+        console.log(movie)
       } catch (error) {
         console.log("error", error);
       }
@@ -30,7 +32,7 @@ const Banner = () => {
       style={{
         backgroundSize: "cover",
         backgroundImage:
-          `url(:https://image.tmdb.org/t/p/original${movie?.backdrop_path})`,
+          `url(https://image.tmdb.org/t/p/original${movie?.backdrop_path})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
@@ -50,3 +52,6 @@ const Banner = () => {
   );
 };
 export default Banner;
+
+
+//https://image.tmdb.org/t/p/original/87mebbBtoWzHV0kILgV6M7yIfun.jpg
